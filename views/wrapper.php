@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/template/css/style.css">
+    <link rel="stylesheet" href="/template/css/adaptation.css">
+    <link rel="stylesheet" href="/template/css/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/logotypes/logobeatbot.jpg">
+    <title>BeatBot</title>
+</head>
+
+<body>
+    <div class="content">
+        <?php require_once($template) ?>  
+    </div>
+    <footer class="footer">
+        <div class="container footer__flex">
+            <div class="footer__about">
+                <h1 class="footer-heading">Сайт</h1>
+                <a class="" href="/about">
+                    <h3 class="footer__link">О проекте</h3>
+                </a>
+                <br>
+                <p style="color: #797979;">© <?php echo (date('Y')); ?> BeatBot - Telegram-бот, создающий качественные биты в кратчайшие сроки.</p>
+                <br>
+                <div style="display: flex;">
+                    <a class="logo" href="/">
+                    <img class="logo_img" src="/img/logotypes/logobeatbot.png">
+                    <h3 class="logo_text">BeatBot</h3>
+                </div>
+            </a>
+            </div> 
+            <div class="footer__contacts">
+                <h1 class="footer-heading">Связаться с нами</h1>
+                <p style="color: #797979;">Рабочая почта</p>
+                <a class="" href="mailto:tech.beatbot@mail.ru">
+                    <h4 class="footer__link">tech.beatbot@mail.ru</h4>
+                </a>
+                <br>
+                <p style="color: #797979;">Контакты</p>
+                <a class="" href="tel:+79781055722">
+                    <h4 class="footer__link">+7 978 105 57 22</h4>
+                </a>
+                <br>
+                <p style="color: #797979;">Написать в теллеграме</p>
+                <a class="" href="https://t.me/beatbotfather">
+                    <h4 class="footer__link">@beatbotfather</h4>
+                </a>
+                <a class="" href="/about">
+                <h4 class="footer__link">@Rancorouseful</h4>
+                </a>      
+            </div> 
+        </div>
+    </footer>
+</body>

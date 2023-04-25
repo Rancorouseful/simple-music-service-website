@@ -1,0 +1,119 @@
+.header {
+    width: 100%;
+    padding: 20px 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* LOGOTYPE */
+
+.logo {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo_img {
+    height: 64px;
+}
+
+.logo_text {
+    margin-left: 5px;
+    font-family: 'Goldman', cursive;
+    color: #e9e9e9;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* BUTTONS */
+
+.hrefs__container {
+    width: auto;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.href-el {
+    padding: 5px 15px;
+    background-color: #e1e1e1;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    color: #1f1f1f;
+    font-weight: 500;
+}
+
+.href-el:hover {
+    background-color: #d8dee3;
+    box-shadow: 1px 2px 10px rgba(49, 49, 49, 0.05);
+    color: #0071c4;
+}
+
+/* FIND WINDOW */
+
+.search__container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.find_window {
+    display: flex;
+    min-width: 100%;
+    height: 38px;
+    font-size: 14px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+input:focus {
+    border: none;
+    outline: none !important;
+    border: 1px solid #9a9a9a;
+}
+
+.input {
+    text-decoration: none;
+    width: 90%;
+    height: 100%;
+    padding: 0 8px;
+    background-color: #f3f3f3;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #bbbbbb;
+
+    font-family: "Montserrat", sans-serif;
+    color: #252525;
+}
+
+.find-btn {
+    width: 10%;
+    height: 100%;
+
+    cursor: pointer;
+
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #f1f1f1;
+    font-weight: 400;
+
+    padding-right: 8px;
+
+    background-color: #313131;
+    border-radius: 0 10px 10px 0;
+
+    transition: linear 0.1s;
+}
+
+.find-btn:hover {
+    background-color: #3a3a3a;
+}
+
+.find-btn:active {
+    background-color: #dcdcdc;
+    border: 1px solid #313131;
+    color: #313131;
+}

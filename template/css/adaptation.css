@@ -1,0 +1,90 @@
+@media only screen and (max-width: 1920px) { 
+    .intro__heading__text {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 1520px) { 
+    .intro__heading__text {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 1335px) { 
+    .intro__heading__text {
+        width: 90%;
+        font-size: 28px;
+    }
+    .intro__heading__img {
+        position: absolute;
+        opacity: 0.3;
+        width: 60%;
+        z-index: 1;
+        margin-top: 10%;
+        right: -20%;
+    }
+    .about__img {
+        width: 70%;
+        position: absolute;
+        right: -30%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+    }
+    .refund__policy {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header__container {
+        width: 90%;
+    }
+
+    .intro__heading__text {
+        text-align: center;
+    }
+    .intro__buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__button {
+        align-items: center;
+    }
+    .intro__button:first-child {
+        margin-right: 0;
+    }
+    .intro__heading__text {
+        width: 100%;
+    }
+    .intro__heading__img {
+        display: none;
+    }
+    .about__img {
+        opacity: 0.9;
+        right: -60%;
+        width: 100%;
+        object-fit: contain;
+    }
+    .refund__policy__flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .refund__policy__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+    .refund__policy__img {
+        width: 50%;
+        object-fit: cover;
+        padding: 5% 10% 5%;
+        margin: 0 auto;
+    }
+    .footer__about {
+        width: 35%;
+    }
+    .footer__contacts {
+        width: 35%;
+    }
+}
