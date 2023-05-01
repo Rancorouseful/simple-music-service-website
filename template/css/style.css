@@ -204,7 +204,7 @@ p {
 
 .refund__policy {
     width: 100%;
-    padding: 5vh 10% 0;
+    padding: 5vh 10% 80px;
 }
 
 .refund__policy__heading {
@@ -236,7 +236,6 @@ p {
 /* FOOTER */
 
 .footer {
-    margin-top: 80px;
     padding-top: 40px;
     padding-bottom: 120px;
     background-color: #131313;

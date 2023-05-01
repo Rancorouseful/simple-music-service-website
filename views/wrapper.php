@@ -29,9 +29,9 @@
     <footer class="footer">
         <div class="container footer__flex">
             <div class="footer__about">
-                <h1 class="footer-heading">Сайт</h1>
-                <a class="" href="/about">
-                    <h3 class="footer__link">О проекте</h3>
+                <h1 class="footer-heading">Проект</h1>
+                <a class="" href="https://t.me/NeuralBeatBot">
+                    <h3 class="footer__link">Бот в телеграме</h3>
                 </a>
                 <br>
                 <p style="color: #797979;">© <?php echo (date('Y')); ?> BeatBot - Telegram-бот, создающий качественные биты в кратчайшие сроки.</p>
@@ -55,7 +55,7 @@
                     <h4 class="footer__link">+7 978 105 57 22</h4>
                 </a>
                 <br>
-                <p style="color: #797979;">Написать в теллеграме</p>
+                <p style="color: #797979;">Написать в телеграме</p>
                 <a class="" href="https://t.me/beatbotfather">
                     <h4 class="footer__link">@beatbotfather</h4>
                 </a>

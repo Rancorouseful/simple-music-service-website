@@ -2,7 +2,7 @@
     width: 100%;
     padding: 20px 0 20px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -32,26 +32,28 @@
 
 .hrefs__container {
     width: auto;
-    margin: 0 10px;
+    margin: 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .href-el {
-    padding: 5px 15px;
-    background-color: #e1e1e1;
-    border: 1px solid #dadada;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-    color: #1f1f1f;
+    text-transform: uppercase;
+    color: #ececec;
     font-weight: 500;
+    font-size: 20px;
+    border: 2px solid #ececec;
+    border-radius: 2px;
+    padding: 5px 10px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
 }
 
 .href-el:hover {
-    background-color: #d8dee3;
-    box-shadow: 1px 2px 10px rgba(49, 49, 49, 0.05);
-    color: #0071c4;
+    color: orange;
+    border: 2px solid orange;
 }
 
 /* FIND WINDOW */

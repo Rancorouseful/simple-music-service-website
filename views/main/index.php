@@ -1,6 +1,17 @@
 
 <div class="intro">
-    <?php require_once("views/header.php") ?>
+    <header class="container header__container">
+        <div class="header">
+            <a class="logo" href="/">
+                <img class="logo_img" src="/img/logotypes/logobeatbot.png">
+                <h3 class="logo_text">BeatBot</h3>
+            </a>
+            <div class="hrefs__container">
+                <a class="href-el" href="/auth">Войти</a>
+            </div>
+        </div>
+
+    </header>
     <div class="container">
         <div class="intro__heading">
             <div class="intro__heading__text">
@@ -83,7 +94,7 @@
                     <p>Обращаться:</p>
                     <br>
                     <p>Почта - <a href="mailto:tech.beatbot@mail.ru">tech.beatbot@mail.ru</a></p>
-                    <p>Теллеграм - <a href="https://t.me/beatbotfather">@beatbotfather</a></p>
+                    <p>Телеграм - <a href="https://t.me/beatbotfather">@beatbotfather</a></p>
                 </div>
                 <img class="refund__policy__img" src="/img/emblem.png">
             </div>
