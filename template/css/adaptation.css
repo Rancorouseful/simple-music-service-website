@@ -9,10 +9,10 @@
     }
 }
 
-@media only screen and (max-width: 1335px) { 
+@media only screen and (m-width: 1335px) { 
     .intro__heading__text {
         width: 90%;
-        font-size: 28px;
+        font-size: 10px;
     }
     .intro__heading__img {
         position: absolute;
@@ -36,12 +36,15 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+    }
     .header__container {
         width: 90%;
     }
-
-    .intro__heading__text {
+    .intro__heading__text h1 {
         text-align: center;
+        font-size: 10px;
     }
     .intro__buttons {
         flex-direction: column;
@@ -58,6 +61,9 @@
     }
     .intro__heading__img {
         display: none;
+    }
+    .about__text {
+        width: 100%;
     }
     .about__img {
         opacity: 0.9;
