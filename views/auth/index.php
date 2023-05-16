@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/template/css/auth.css">
+<link rel="stylesheet" href="/css/auth.css">
 <div class="intro">
     <header class="container header__container">
         <div class="header">

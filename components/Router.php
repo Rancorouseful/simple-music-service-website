@@ -7,7 +7,7 @@ class Router
 
     public function __construct()
     {
-        $routesPath = DIR . '/config/routes.php';
+        $routesPath = DIR . 'config/routes.php';
         $this->routes = include($routesPath);
     }
 

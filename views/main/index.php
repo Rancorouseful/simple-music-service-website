@@ -4,30 +4,28 @@
         <div class="header">
             <a class="logo" href="/">
                 <img class="logo_img" src="/img/logotypes/logobeatbot.png">
-                <h3 class="logo_text">BeatBot</h3>
+                <p class="logo_text">BeatBot</p>
             </a>
             <div class="hrefs__container">
                 <a class="href-el" href="/auth">Войти</a>
             </div>
         </div>
-
     </header>
     <div class="container">
         <div class="intro__heading">
             <div class="intro__heading__text">
                 <h1 class="falling-text">Telegram-бот,<br> создающий качественные биты в кратчайшие сроки.</h1>
                 <div class="intro__buttons">
-                    <div class="intro__button"> 
-                        <a href="https://t.me/NeuralBeatBot">Перейти к боту</a>
-                    </div>
-                    <div class="intro__button">
-                        <a href="">Создать бит</a>
-                    </div>  
+                    <a href="https://t.me/NeuralBeatBot" class="intro__button falling-text"> 
+                        <p>Перейти к боту</p>
+                    </a>
+                    <a href="/login" class="intro__button falling-text">
+                        <p>Создать бит</p>
+                    </a>  
                 </div>
             </div>
             <img class="intro__heading__img image-animation" src="/img/headphones.png">
         </div>
-        
     </div>
 </div>
 <div class="about">
@@ -83,7 +81,7 @@
         <div class="refund__policy__flex falling-text">
             <div class="refund__policy__column">
                 <div class="refund__policy__text">
-                    <p>В случае, если :</p>
+                    <p>В случае, если:</p>
                     <ul>
                         <li>Полученный бит имеет брак, связанный с испорченным звуком.</li>
                         <li>Деньги были сняты, при этом товар не был получен.</li>
