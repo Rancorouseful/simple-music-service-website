@@ -1,6 +1,5 @@
-
 <div class="intro">
-    <header class="container header__container">
+    <div class="container header__container">
         <div class="header">
             <a class="logo" href="/">
                 <img class="logo_img" src="/img/logotypes/logobeatbot.png">
@@ -10,21 +9,61 @@
                 <a class="href-el" href="/auth">Войти</a>
             </div>
         </div>
-    </header>
+    </div>
     <div class="container">
         <div class="intro__heading">
             <div class="intro__heading__text">
-                <h1 class="falling-text">Telegram-бот,<br> создающий качественные биты в кратчайшие сроки.</h1>
+                <h1 class="falling-text">Быстрый и качественный Telegram-бот для создания битов</h1>
                 <div class="intro__buttons">
                     <a href="https://t.me/NeuralBeatBot" class="intro__button falling-text"> 
                         <p>Перейти к боту</p>
                     </a>
-                    <a href="/login" class="intro__button falling-text">
+                    <a href="/auth" class="intro__button falling-text">
                         <p>Создать бит</p>
                     </a>  
                 </div>
             </div>
             <img class="intro__heading__img image-animation" src="/img/headphones.png">
+        </div>
+    </div>
+</div>
+<div class="meeting">
+    <div class="container">
+        <div class=" meeting__flex">
+            <div class="meeting__phone">
+                
+                    <div class="screen__chat">
+                        <div class="message from__user">
+                            <div class="message__user">
+                                Сделай мне бит
+                            </div>
+                        </div>
+                        <div class="message from__bot">
+                            <div class="message__bot">
+                                Скидываю примеры...
+                            </div>
+                        </div>
+                        <div class="message from__bot">
+                            <div class="message__bot message__player">
+                                <audio id="audio" src="/audio/examplebeat1.wav"></audio>
+                                <button id="play-pause" class="btn-round">
+                                    <img id="play-pause-icon" src="/img/play.png" alt="Play">
+                                </button>
+                                <input id="seek-bar" type="range" min="0" max="100" value="0" class="audio-track">
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="meeting__text">
+                <h1>Почему телеграм-бот?</h1>
+                <br>
+                Создание уникальной музыки может быть сложной задачей, но с помощью нашего Telegram-бота вы сможете создавать качественные биты быстро и легко.<br><br>Наш бот предоставляет простой и интуитивно понятный интерфейс, который позволяет вам выбирать из множества стилей и жанров, настраивать звук и микширование, а также экспортировать готовый трек для дальнейшего использования.<br><br>
+
+                Благодаря нашему боту вы можете создавать уникальные биты в любое время и в любом месте, используя только свой мобильный телефон или планшет.<br>Наш Telegram-бот является лучшим инструментом для начинающих музыкантов и продюсеров, которые хотят создавать качественную музыку, не тратя много времени и усилий.<br><br>
+                
+                Попробуйте наш бот сегодня и начните создавать свою уникальную музыку уже сейчас!<br><br>
+            </div>
         </div>
     </div>
 </div>
@@ -107,3 +146,4 @@
         </div>
     </div>
 </div>
+<script src="/js/script.js"></script>

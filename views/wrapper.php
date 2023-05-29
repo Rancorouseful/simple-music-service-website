@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/adaptation.css">
     <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/adaptation.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
     <footer class="footer">
         <div class="footer__flex">
             <div class="footer__about">
-                <h1 class="footer-heading">Проект</h1>
+                <h1 class="footer-heading">Бренд</h1>
                 <a class="" href="https://t.me/NeuralBeatBot">
                     <h3 class="footer__link">Бот в телеграме</h3>
                 </a>

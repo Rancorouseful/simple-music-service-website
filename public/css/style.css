@@ -165,7 +165,147 @@ p {
       transform: translateY(10px) rotate(3deg);
     }
   }
+  
+/* MEETING */
 
+.meeting {
+    margin-top: 10vh;
+}
+.meeting__flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+.meeting__phone {
+    width: 50%;
+    padding: 40px 80px 20px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.phone__screen {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 40px;
+    padding: 30px 15px;
+}
+.screen__chat {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+  justify-content: center
+}
+
+.message {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+
+.message:nth-child(n+2) {
+  animation-delay: 0.5s;
+}
+
+.from__user {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.from__bot {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.message__user {
+  max-width: 70%;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 15px 15px 0 15px;
+  padding: 12px 30px;
+}
+
+.message__bot {
+  max-width: 70%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  border-radius: 15px 15px 15px 0;
+  padding: 12px 30px;
+}
+
+.message__player {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+.meeting__text {
+  width: 50%;
+  font-size: 20px;
+}
+
+.btn-round {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: 0;
+  aspect-ratio: 1 / 1;
+}
+
+.btn-round:focus {
+  outline: none;
+}
+
+.audio-track {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  -webkit-appearance: none;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.audio-track::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#audio {
+  display: none;
+}
+
+#play-pause-icon {
+  max-width: 60%;
+  height: auto;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* ABOUT */
 
 .about {
@@ -191,7 +331,7 @@ p {
 
 .about__text {
     width: 60%;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .about__img {

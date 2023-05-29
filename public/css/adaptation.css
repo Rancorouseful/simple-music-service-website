@@ -24,6 +24,9 @@
         font-size: 24px;
         border: 2px solid orange;
     }
+    .intro__button:hover {
+        border: 2px solid orangered;
+    }
     .refund__policy {
         padding: 0;
     }
@@ -41,12 +44,33 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .auth__window {
+        margin: 15vh auto 0;
+    }
+    .intro__heading__text {
+        width: 80%;
+        font-size: 18px;
+        text-align: center;
+    }
     .intro__buttons {
         align-items: center;
         justify-content: space-evenly;
     }
     .intro__button {
         font-size: 20px;
+    }
+    .meeting__flex {
+        flex-direction: column;
+    }
+    .meeting__text {
+        width: 100%;
+    }
+    .meeting__phone {
+        width: 100%;
+        padding: 20px 0 20px;
+    }
+    .phone_screen {
+        width: 100%;
     }
     .about__img {
         width: 70%;
@@ -91,17 +115,18 @@
 }
 
 @media only screen and (max-width: 968px) {
-    .container {
-        width: 75%;
-    }
     .logo_text {
-        font-size: 22px;
+        font-size: 28px;
+    }
+    .logo_img {
+        height: 48px;
     }
     .header__container {
         width: 90%;
     }
     .intro__heading__text {
-        text-align: center;
+        width: 100%;
+        text-align: start;
     }
     .hrefs__container:last-child {
         margin-right: 0;
@@ -116,9 +141,6 @@
     .intro__button:first-child {
         margin-right: 0;
     }
-    .intro__heading__text {
-        width: 100%;
-    }
     .intro__heading__img {
         display: none;
     }
@@ -126,6 +148,9 @@
         padding-top: 5vh;
     }
     .about__heading {
+        text-align: center;
+    }
+    .refund__policy__heading {
         text-align: center;
     }
     .about__text {
@@ -145,6 +170,9 @@
     }
 }
 @media only screen and (max-width: 800px) {
+    .intro__heading {
+        margin-top: 10vh;
+    }
     .intro__buttons {
         align-items: center;
         flex-direction: column;
