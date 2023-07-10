@@ -1,20 +1,55 @@
 <?php
 
-// FRONT CONTROLLER
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Http\Request;
 
-// 1. Общие настройки
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+define('LARAVEL_START', microtime(true));
 
+/*
+|--------------------------------------------------------------------------
+| Check If The Application Is Under Maintenance
+|--------------------------------------------------------------------------
+|
+| If the application is in maintenance / demo mode via the "down" command
+| we will load this file so that any pre-rendered content can be shown
+| instead of starting the framework, which could cause an exception.
+|
+*/
 
-// 2. Подключение файлов системы
-$currentDir = __DIR__;
-$parentDir = dirname($currentDir);
-define('DIR', $parentDir . '/');
+if (file_exists($maintenance = __DIR__ . '/../storage/framework/maintenance.php')) {
+    require $maintenance;
+}
 
+/*
+|--------------------------------------------------------------------------
+| Register The Auto Loader
+|--------------------------------------------------------------------------
+|
+| Composer provides a convenient, automatically generated class loader for
+| this application. We just need to utilize it! We'll simply require it
+| into the script here so we don't need to manually load our classes.
+|
+*/
 
-require_once(DIR . 'components/Router.php');
+require __DIR__.'/../vendor/autoload.php';
 
-// 3. Вызов Router
-$router = new Router();
-$router->run();
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Once we have the application, we can handle the incoming request using
+| the application's HTTP kernel. Then, we will send the response back
+| to this client's browser, allowing them to enjoy our application.
+|
+*/
+
+$app = require_once __DIR__.'/../bootstrap/app.php';
+
+$kernel = $app->make(Kernel::class);
+
+$response = $kernel->handle(
+    $request = Request::capture()
+)->send();
+
+$kernel->terminate($request, $response);
