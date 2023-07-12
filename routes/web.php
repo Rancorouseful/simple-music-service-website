@@ -16,3 +16,10 @@ use App\Http\Controllers\MainController;
 
 Route::get('/', [MainController::class, 'index']);
 Route::get('/offer', [OfferController::class, 'index']);
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin');
+});
+
+require __DIR__.'/auth.php';

@@ -28,20 +28,20 @@ input {
 }
 
 .alert {
-    border: 2px solid darkred;
+    border: 2px solid #006914;
     border-radius: 15px;
     padding: 10px 15px;
     margin: 20px auto;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    color: #ff0000;
-    background-color: rgba(255, 0, 0, 0.1);
+    color: #00f326;
+    background-color: rgba(0, 98, 10, 0.1);
 }
 
 .auth__window {
     max-width: 450px;
-    margin: 15vh auto 0;
+    margin: 10vh auto 0;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     padding: 15px 30px 30px;
@@ -66,6 +66,12 @@ input {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     margin: 10px 0 10px;
+}
+
+.auth__flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 40px;
 }
 
 .auth__button {
@@ -93,3 +99,76 @@ input {
     color: #633eb0;
     border: 2px solid #633eb0;
 }
+
+.is-invalid {
+    border: 1px solid red;
+}
+
+.auth__captcha {
+    display: flex;
+    justify-content: center;
+}
+.auth__captcha__img {
+    border-radius: 8px;
+}
+.captcha__wrong {
+    color: red;
+    margin: 30px 0 0;
+    text-align: center;
+}
+.auth__switch {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth__hidden {
+    display: none;
+}
+
+/* checkbox-rect */
+.checkbox-rect input[type="checkbox"] {
+    display: none;
+}
+.checkbox-rect input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    color: #ececec;;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.checkbox-rect input[type="checkbox"]:hover + label:before {
+    background: #362260;
+    box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+.checkbox-rect input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+}
+.checkbox-rect input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #343a3f;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #ececec;
+}
+.checkbox-rect input[type="checkbox"]:checked + label:before {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 0.2em;
+    border: 2px solid #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: #362260;
+    box-shadow: 0 0 0 1px #000;
+}
+/* checkbox-rect end */

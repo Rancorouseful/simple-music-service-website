@@ -10,7 +10,6 @@ class OfferController extends Controller
 {
     public  function index()
     {
-        $users = BeatBotUser::all();
         return view('offer.index');
     }
 }

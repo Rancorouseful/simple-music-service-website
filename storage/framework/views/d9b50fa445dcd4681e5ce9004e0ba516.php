@@ -156,6 +156,11 @@
                                 <input id="seek-bar" type="range" min="0" max="100" value="0" class="audio-track">
                             </div>
                         </div>
+                        <div class="message from__bot">
+                            <div class="message__bot">
+                                Нажми и проверь!
+                            </div>
+                        </div>
                     </div>
 
                 </div>

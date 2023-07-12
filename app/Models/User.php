@@ -2,20 +2,39 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
-class User extends Authenticatable
+/**
+ * Class User
+ * @package App\Models
+ *
+ * @property $id
+ * @property $name
+ * @property $role
+ * @property $email
+ * @property $email_verified_at
+ * @property $password
+ * @property $remember_token
+ * @property $created_at
+ * @property $updated_at
+ *
+ * @property $isAdmin
+ */
+class User extends Authenticatable implements MustVerifyEmail
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    public const ROLE_USER = 'user';
+
+    public const ROLE_ADMIN = 'admin';
+
+    use HasFactory, Notifiable;
 
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $fillable = [
         'name',
@@ -24,22 +43,37 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be hidden for serialization.
+     * The attributes that should be hidden for arrays.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $hidden = [
+        'role',
         'password',
         'remember_token',
     ];
 
     /**
-     * The attributes that should be cast.
+     * The attributes that should be cast to native types.
      *
-     * @var array<string, string>
+     * @var array
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'password' => 'hashed',
     ];
+
+    public function getIsAdminAttribute(): bool
+    {
+        return $this->role === self::ROLE_ADMIN;
+    }
+
+    public function socialUsers()
+    {
+        return $this->hasMany(SocialUser::class);
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class, 'user_id');
+    }
 }

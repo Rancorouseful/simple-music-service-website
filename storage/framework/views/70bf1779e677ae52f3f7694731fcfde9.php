@@ -1,5 +1,5 @@
 <?php $__env->startSection('content'); ?>
-<div class="offer falling-text">
+<div class="offer">
     <div class="container">
         <p style='color: #797979;'><a href='/'>Главная</a> / Публичная оферта</p>
         <br>
