@@ -147,7 +147,6 @@
                         </div>
                         <div class="message from__bot">
                             <div class="message__bot message__player">
-
                                 <audio controls id="audio">
                                     <source src="{{ asset("build/audio/examplebeat3.wav")}}" type="audio/mpeg">
                                     Your browser does not support the audio element.

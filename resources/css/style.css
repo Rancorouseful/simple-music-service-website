@@ -544,6 +544,9 @@ img {
     border: none;
     padding: 0;
     aspect-ratio: 1 / 1;
+    cursor: pointer;
+
+    transition: 0.1s linear;
 }
 
 .btn-round:focus {

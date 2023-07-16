@@ -10,7 +10,7 @@
                 </a>
             </div>
         </div>
-        <div class="container falling-text">
+        <div class="container">
             <div class="home">
                 <p style='color: #797979;'><a href='/'>Главная</a> / Личный кабинет</p>
                 <div class="home__flex">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="home__grid__container">
-                    <div class="home__grid">
+                    <div class="home__grid falling-text">
                         <div class="grid__item item__for_ad">
                             <h2>
                                 Сайт в разработке!

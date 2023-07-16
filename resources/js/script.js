@@ -30,35 +30,3 @@ seekBar.addEventListener('change', () => {
   const time = (seekBar.value / 100) * audio.duration;
   audio.currentTime = time;
 });
-
-// SLIDER
-const carousel = document.querySelector('.carousel');
-const slides = document.querySelectorAll('.slide');
-const navIndicators = document.querySelectorAll('.nav-indicator');
-
-let currentIndex = 0;
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    if (i === index) {
-      slide.classList.add('active');
-    } else {
-      slide.classList.remove('active');
-    }
-  });
-
-  navIndicators.forEach((indicator, i) => {
-    if (i === index) {
-      indicator.classList.add('active');
-    } else {
-      indicator.classList.remove('active');
-    }
-  });
-}
-
-navIndicators.forEach((indicator, index) => {
-  indicator.addEventListener('click', () => {
-    showSlide(index);
-  });
-});
-

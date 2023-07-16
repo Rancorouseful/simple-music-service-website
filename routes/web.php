@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OfferController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\BotUserAdminController;
+use App\Http\Controllers\Admin\UserAdminController;
+use App\Http\Controllers\Admin\OrderAdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +24,11 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('admin');
+    Route::get('/bot_users', [BotUserAdminController::class, 'index'])->name('admin.bot_users');
+    Route::post('/bot_users/balance/updating', [BotUserAdminController::class, 'updateBalance'])->name('admin.bot_users.update_balance');
+    Route::post('/bot_users/processing/updating', [BotUserAdminController::class, 'updateProcessing'])->name('admin.bot_users.update_processing');
+    Route::get('/users', [UserAdminController::class, 'index'])->name('admin.users');
+    Route::get('/orders', [OrderAdminController::class, 'index'])->name('admin.orders');
 });
 
 require __DIR__.'/auth.php';
