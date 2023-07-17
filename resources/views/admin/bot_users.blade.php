@@ -5,6 +5,13 @@
 @section('description')<b>bot_users</b> - таблица пользователей телеграм бота.@endsection
 
 @section('status')
+    @if($errors->any())
+        @foreach($errors->all() as $error)
+            <div class="alert-danger">
+                {{ $error }}
+            </div>
+        @endforeach
+    @endif
     @if(session('error'))
         <div class="alert-danger">
             {{ session('error') }}
@@ -32,8 +39,8 @@
             </select>
         </div>
         <div class="admin__command__part">
-            <label for="amount">Изменить: </label>
-            <input type="number" name="amount" id="amount" class="admin__command__input" placeholder="сумма изменения">
+            <label for="balance">Изменить: </label>
+            <input type="number" name="balance" id="balance" class="admin__command__input" placeholder="сумма изменения">
         </div>
         <input type="submit" value="Обновить" class="admin__button__small">
     </form>

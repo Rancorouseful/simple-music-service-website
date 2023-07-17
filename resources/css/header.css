@@ -30,6 +30,12 @@
 }
 
 /* BUTTONS */
+.href__home {
+    height: 48px;
+    width: 48px;
+    margin: auto 0;
+}
+
 
 .hrefs__container {
     width: auto;

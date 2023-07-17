@@ -11,12 +11,6 @@ class UserAdminController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-
-        if (!$user || !$user->isAdmin) {
-            abort(404);
-        }
-
         $users = User::paginate();
 
         return view('admin.users', compact('users'));

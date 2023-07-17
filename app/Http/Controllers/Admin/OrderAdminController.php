@@ -11,12 +11,6 @@ class OrderAdminController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-
-        if (!$user || !$user->isAdmin) {
-            abort(404);
-        }
-
         $orders = Order::paginate();
 
         return view('admin.orders', compact('orders'));

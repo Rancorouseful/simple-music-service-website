@@ -10,12 +10,6 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-
-        if (!$user || !$user->isAdmin) {
-            abort(404);
-        }
-
         $users = User::where('role', '!=', 'admin')->paginate();
 
         return view('admin.home', compact('users'));

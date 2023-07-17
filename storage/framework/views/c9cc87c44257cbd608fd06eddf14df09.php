@@ -3,6 +3,14 @@
 <?php $__env->startSection('description'); ?><b>bot_users</b> - таблица пользователей телеграм бота.<?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('status'); ?>
+    <?php if($errors->any()): ?>
+        <?php $__currentLoopData = $errors->all(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $error): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+            <div class="alert-danger">
+                <?php echo e($error); ?>
+
+            </div>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    <?php endif; ?>
     <?php if(session('error')): ?>
         <div class="alert-danger">
             <?php echo e(session('error')); ?>
@@ -32,8 +40,8 @@
             </select>
         </div>
         <div class="admin__command__part">
-            <label for="amount">Изменить: </label>
-            <input type="number" name="amount" id="amount" class="admin__command__input" placeholder="сумма изменения">
+            <label for="balance">Изменить: </label>
+            <input type="number" name="balance" id="balance" class="admin__command__input" placeholder="сумма изменения">
         </div>
         <input type="submit" value="Обновить" class="admin__button__small">
     </form>
